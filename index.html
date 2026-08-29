@@ -49,6 +49,8 @@
   /* ── 導入文 ───────────────────── */
   .intro{padding:42px 0 8px; text-align:center}
   .intro p{margin:0; font-size:15px; color:var(--sub)}
+  /* 狭い端末でも必ず1行に収める（折り返して「す。」だけ落ちるのを防ぐ） */
+  .intro p.one{font-size:min(15px, 3.6vw); white-space:nowrap}
   .intro .big{
     font-size:clamp(19px,5.2vw,24px); font-weight:700; color:var(--ink);
     letter-spacing:.02em; margin-bottom:10px; line-height:1.6;
@@ -146,12 +148,12 @@
 
   <div class="intro">
     <p class="big">はじめまして。<br>名刺の代わりに、漫画を描きました。</p>
-    <p>4ページで、私がどこから来た人間かをお伝えします。</p>
+    <p class="one">4ページで、私がどこから来た人間かをお伝えします。</p>
     <hr class="rule">
   </div>
 
   <div class="pages">
-    <p class="readnote">※ 右から左に読む、縦書きの漫画です</p>
+    <p class="readnote">※ 下にスクロールしてお読みください（全4ページ）</p>
     <figure><img src="img/p01.webp" width="1024" height="1536" alt="1ページ目：決められた道。自動車整備専門学校を卒業し、整備士として十年。"><figcaption>1 / 4</figcaption></figure>
     <figure><img src="img/p02.webp" width="1024" height="1536" alt="2ページ目：腕を買われて営業へ。不況の中、後輩が公用車整備の求人を差し出す。" loading="lazy"><figcaption>2 / 4</figcaption></figure>
     <figure><img src="img/p03.webp" width="1024" height="1536" alt="3ページ目：公務員として働きながら定年を前に、AIが漫画を描く世界を知る。" loading="lazy"><figcaption>3 / 4</figcaption></figure>
